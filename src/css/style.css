@@ -6,13 +6,12 @@ html, body{
 }
 
 .navbar{
-    background-color: #686464;
-    color: white;
-    padding: 0.5em;
+    background-color: white;
+    border-bottom: 1px solid #9d9a98;
+    color: black;
     text-align: center;
     width: 100%;
     position: fixed;
-    /*position: relative;*/
     margin: 0;
     top: 0;
 }
@@ -35,6 +34,7 @@ html, body{
 }
 
 .center_top{
+    flex: 1;
     visibility: hidden;
     width: 33%;
 }
@@ -76,10 +76,27 @@ html, body{
     justify-content: center;
 }
 
+.subnav_menu{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 100%;
+    padding: 0;
+}
+
+.subnav_menu>ul>li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 10px;
+}
+
 
 .content{
-    margin-top: 12em;
+    position: static;
     padding: 1em;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
