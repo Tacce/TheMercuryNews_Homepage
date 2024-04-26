@@ -16,7 +16,9 @@ window.addEventListener('scroll', function() {
         navbar.querySelector('.primary_middle').style.height = '0';
         navbar.querySelector('.primary_bottom').style.visibility = 'hidden';
         navbar.querySelector('.primary_bottom').style.height = '0';
-        content.style.marginTop = '12em' ;
+        navbar.querySelector('.trending_bar').style.visibility = 'hidden';
+        navbar.querySelector('.trending_bar').style.height = '0';
+        content.style.marginTop = '15em' ;
     } else {
         navbar.style.position = 'relative';
         navbar.querySelector('.center_top').style.visibility = 'hidden';
@@ -24,6 +26,8 @@ window.addEventListener('scroll', function() {
         navbar.querySelector('.primary_middle').style.height = '5em';
         navbar.querySelector('.primary_bottom').style.visibility = 'visible';
         navbar.querySelector('.primary_bottom').style.height = '3em';
+        navbar.querySelector('.trending_bar').style.visibility = 'visible';
+        navbar.querySelector('.trending_bar').style.height = '3em';
         content.style.marginTop = '0';
     }
 });
