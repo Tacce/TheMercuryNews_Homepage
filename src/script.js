@@ -20,7 +20,7 @@ window.addEventListener('scroll',function() {
             navbar.querySelector('.primary_bottom').style.height = '0';
             navbar.querySelector('.trending_bar').style.visibility = 'hidden';
             navbar.querySelector('.trending_bar').style.height = '0';
-            content.style.marginTop = '15em' ;
+            content.style.marginTop = '17em' ;
         } else {
             navbar.style.position = 'relative';
             navbar.querySelector('.center_top').style.visibility = 'hidden';

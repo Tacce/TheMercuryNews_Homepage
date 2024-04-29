@@ -189,9 +189,3 @@ html, body{
         font-size: 4vw;
     }*/
 }
-.content{
-    position: static;
-    padding: 0;
-    text-align: left;
-    width: 100%;
-}

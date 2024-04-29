@@ -1,0 +1,107 @@
+.content{
+    position: static;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.feature_wrapper{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: calc(75% - 0.32rem);
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature_left{
+    width: calc(75% - 0.32rem);
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main_article{
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main_image{
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+    position: relative;
+    width: calc(56.25% - 0.55rem);
+    z-index: -100;
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+}
+
+.article_info{
+    width: calc( 43.75% - 0.71rem );
+    font: normal 400 0.9375em / 1.2666666667 "Droid Sans", Helvetica, sans-serif;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.entry_title {
+    font-size: .875em;
+    line-height: 1.357142857;
+    font-family: "Droid Sans", Helvetica, sans-serif;
+}
+
+@media (min-width: 80em) {
+    .entry_title {
+        font-size: 1.8125em;
+        line-height: 1.13;
+    }
+}
+
+.related_tag{
+    font: normal 600 0.75em / 1.25 "Droid Serif", Helvetica, sans-serif;
+    border-bottom: 1px solid #aaa7a4;
+    color: #5d5b5a;
+    margin-bottom: .75em;
+    padding-bottom: .25em;
+    text-align: left;
+}
+
+.primary_related{
+    text-align: left;
+    font-size: .625em;
+    margin-left: -2.5em;
+}
+
+.subscriber_only_tag{
+    background-color: #006394;
+    color: white;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    display: block;
+    clear: both;
+    width: max-content;
+    margin: auto auto 3px 0;
+}
+
+
+.related_article_info{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+}
+
+.related_title{
+    font: normal 700 1.5625em / 1.16 "Droid Serif", Helvetica, sans-serif;
+    letter-spacing: -0.03em;
+    margin-bottom: .3636363636em;
+    margin-top: 0;
+}
