@@ -36,6 +36,36 @@ html, body{
     width: 33%;
 }
 
+.toggle_menu{
+    display: flex;
+    line-height: 3em;
+}
+
+.sections>a{
+    color:black;
+    font: normal 600 0.9375em / 1.0666666667 "Droid Sans", Helvetica, sans-serif;
+    padding-left: .25rem;
+    text-decoration: none;
+}
+
+.login_sub_buttons{
+    line-height: 3em;
+    list-style: none;
+    display: flex;
+}
+
+.login_sub_buttons div a{
+    width: calc(8em);
+    display: block;
+    margin-left: 2em;
+    background-color: #006394;
+    color: #fff;
+    font: normal 600 0.9375em / 1.7333333333 "Droid Sans", Helvetica, sans-serif;
+    padding: 6% 3%;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
 .center_top{
     flex: 1;
     visibility: hidden;
@@ -166,7 +196,6 @@ html, body{
         visibility: hidden;
         height: 0;
     }
-
     .login_sub_buttons{
         visibility: hidden;
     }
