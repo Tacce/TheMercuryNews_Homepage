@@ -13,6 +13,7 @@ html, body{
     position: relative;
     margin: 0;
     top: 0;
+    z-index: 100;
 }
 
 .primary_wrapper{
@@ -168,7 +169,7 @@ html, body{
     position: relative;
 }
 
-@media (min-width: 65em) {
+@media only screen and (min-width: 65em) {
     .site-header {
         height: auto;
     }
