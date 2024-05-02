@@ -132,6 +132,12 @@ html, body{
     margin-right: 10px;
 }
 
+.subnav_menu li a{
+    text-decoration: none;
+    color: black;
+    font: normal 600 0.9375em / 1.7333333333 "Droid Sans", Helvetica, sans-serif;
+}
+
 .trending_bar{
     display: flex;
     font-family: "Droid Sans", Helvetica, sans-serif;
@@ -167,6 +173,11 @@ html, body{
     line-height: 1.15;
     padding-right: 1.5625em;
     position: relative;
+}
+
+.trending_bar li a{
+    text-decoration: none;
+    color: #38322a;
 }
 
 @media only screen and (min-width: 65em) {

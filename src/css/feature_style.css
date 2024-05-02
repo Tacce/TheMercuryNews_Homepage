@@ -54,7 +54,7 @@
 .article_info{
     width: calc( 43.75% - 0.71rem );
     font: normal 400 0.9375em / 1.2666666667 "Droid Sans", Helvetica, sans-serif;
-        display: inline-block;
+    display: inline-block;
 }
 
 .entry_title {
@@ -239,6 +239,10 @@
     }
     .feature_wrapper{
         width: 100%;
+    }
+    .bottom_article{
+        border-bottom: 1px solid #aaa7a4;
+        padding-bottom: .5em;
     }
 }
 
