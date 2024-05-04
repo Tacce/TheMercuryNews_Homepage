@@ -66,6 +66,64 @@
     font: normal 600 1.0625em / 1.0588235294 "Droid Serif", Helvetica, sans-serif;
 }
 
+.topic_wrapper{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(75% - 0.32rem);
+    padding-left: 1%;
+}
+
+.topic_column{
+    width: calc(33% - 0.94rem);
+}
+
+.topic_title{
+    font: normal 400 1.2em / 1.1 "Droid Sans", Helvetica, sans-serif;
+    color: #38322a;
+    display: block;
+    letter-spacing: .035em;
+    text-transform: uppercase;
+    margin-bottom: .75em;
+    border-bottom: 2px solid #006394;
+}
+
+.topic_content{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.topic_article{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-bottom: 1em;
+    justify-content: space-between;
+
+}
+
+.topic_article img{
+    width: 100%;
+    height: auto;
+}
+
+.topic_article_info{
+    font: normal 400 0.9375em / 1.2666666667 "Droid Sans", Helvetica, sans-serif;
+    display: inline-block;
+}
+
+.topic_article_title{
+    font-size: 1.2em;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: .5em;
+}
+
+
 @media(max-width: 1040px){
     .recommended{
         width: 100%;
@@ -76,10 +134,19 @@
     .recommended_article{
         font-size: 1em;
     }
+    .topic_wrapper {
+        width: 100%;
+    }
+    .topic_column {
+        width: 49%;
+    }
 }
 
 @media(max-width: 640px){
     .recommended ul{
         columns:1;
+    }
+    .topic_column {
+        width: 100%;
     }
 }

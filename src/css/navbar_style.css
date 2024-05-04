@@ -3,6 +3,7 @@ html, body{
     height: 100%;
     letter-spacing: 0.05em;
     padding: 0;
+    /*overflow-x: hidden; /*temporary solution*/
 }
 
 .navbar{
@@ -88,6 +89,7 @@ html, body{
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+
 }
 
 .right_middle, .center_middle, .left_middle{
@@ -225,6 +227,9 @@ html, body{
     }
     .right_top{
         width: 24%;
+    }
+    .trending_bar{
+        border: 0;
     }
     /*.center_top>div>h1{
         font-size: 4vw;

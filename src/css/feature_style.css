@@ -156,6 +156,14 @@
     padding: 0;
 }
 
+.headline_list li{
+    border-bottom: 1px solid #aaa7a4;
+}
+
+.headline_list li:last-child{
+    border-bottom: 0;
+}
+
 .headline_article{
     display: flex;
     z-index: -100;
@@ -164,7 +172,6 @@
     font-family: "Droid Serif", Helvetica, sans-serif;
     padding-bottom: 1em;
     padding-top: 1em;
-    border-bottom: 1px solid #aaa7a4;
 }
 
 .headline_article_title{
@@ -293,5 +300,10 @@
         width: 100%;
         border-bottom: 1px solid #aaa7a4;
         padding-bottom: .5em;
+    }
+    .headline{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
