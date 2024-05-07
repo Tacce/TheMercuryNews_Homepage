@@ -103,7 +103,6 @@
     flex-direction: column;
     margin-bottom: 1em;
     justify-content: space-between;
-
 }
 
 .topic_article img{
@@ -123,6 +122,135 @@
     padding-bottom: .5em;
 }
 
+.photo_wrapper{
+    width: calc(75% - 0.32rem);
+    padding-left: 1%;
+}
+
+.visibile_wrapper{
+    position: relative;
+}
+
+.media_articles{
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.media_article_primary{
+    width: calc(62.5% - 0.47rem);
+    float: left;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    font-size: 1rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+}
+
+.media_article_title{
+    font-size: 2em;
+    line-height: 1;
+    margin: 0;
+    padding-bottom: .5em;
+}
+
+.media_article_secondary{
+    width: calc(37.5% - 0.28rem);
+    display: flex;
+    font-size: 1rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #d7d6d2;
+}
+
+.media_article_image{
+    float: left;
+    margin-right: 10px;
+}
+
+.media_article_image img{
+    width: 100%;
+    height: auto;
+}
+
+.media_article_info{
+    margin-bottom: 0;
+    font: normal 400 0.5em / 1.2666666667 "Droid Sans", Helvetica, sans-serif;
+    padding-left: 2em;
+}
+
+.media_article_image_small{
+    max-width: 8.75em;
+}
+
+.media_article_image_small img{
+    width: 100%;
+    height: fit-content;
+}
+
+.media_articles li:last-child .media_article_secondary{
+    border-bottom: 0;
+    padding-bottom: 20%;
+}
+
+.show_more{
+    font: normal 700 1em / 1 "Droid Sans", Helvetica, sans-serif;
+    border-color: transparent;
+    color: #006394;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2.5em 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: transparent;
+}
+
+/*.show_more::before{
+    content: "";
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #d7d6d2;
+    border-left: 1px solid #d7d6d2;
+    height: 2.1875em;
+    top: -0.3125em;
+    -ms-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+    width: 2.1875em;
+}*/
+
+.hidden_wrapper{
+    display: none;
+    position: relative;
+    padding-top: 2em;
+}
+
+.media_article_more{
+    width: calc(25% - 15px);
+    margin-bottom: 2em;
+    margin-right: 0.9em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    float: left;
+}
+
+.media_article_more img{
+    width: 100%;
+    height: auto;
+}
+
+.media_article_more h3{
+    font: normal 700 0.9375em / 1.2666666667 "Droid Serif", Helvetica, sans-serif;
+    margin-bottom: .4137931034em;
+    letter-spacing: -0.04em;
+}
 
 @media(max-width: 1040px){
     .recommended{
@@ -139,6 +267,42 @@
     }
     .topic_column {
         width: 49%;
+    }
+    .photo_wrapper{
+        width: calc(60% - 0.5rem);
+    }
+    .media_article_primary {
+        width: 100%;
+    }
+    .visibile_wrapper .media_articles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .visibile_wrapper .media_articles li:not(:first-child){
+        width: calc(49% - 0.63rem);
+        margin-right: 1em;
+    }
+    .media_article_secondary {
+        width: 100%;
+    }
+    .media_articles li:last-child .media_article_secondary{
+        padding-bottom: 0;
+    }
+    .media_article_more{
+        width: calc(33% - 15px);
+    }
+}
+
+@media(max-width: 800px){
+    .photo_wrapper{
+        width: 100%;
+    }
+    .media_article_more{
+        width: calc(50% - 15px);
+    }
+    .visibile_wrapper .media_articles li:not(:first-child){
+        width: 100%;
+        margin-right: 0;
     }
 }
 

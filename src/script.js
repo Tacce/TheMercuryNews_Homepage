@@ -67,3 +67,11 @@ function unpin_navbar(navbar,content){
     navbar.style.position = 'relative';
     content.style.marginTop = '0';
 }
+
+
+function toggleVisibility() {
+    const button = document.querySelector('.show_more');
+    const content = document.querySelector('.hidden_wrapper');
+    button.style.display = "none";
+    content.style.display = "block";
+}
