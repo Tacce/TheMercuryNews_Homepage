@@ -1,0 +1,44 @@
+.more_topics{
+    width: calc(75% - 0.32rem);
+    padding-left: 1%;
+}
+
+.section_highlight{
+    position: relative;
+}
+
+.more_topic_content{
+    display: flex;
+    font-size: 1rem;
+    -webkit-box-pack: justify;
+    position: relative;
+}
+
+.more_topic_article{
+    display: flex;
+    -webkit-box-pack: justify;
+    position: relative;
+    width: calc(68.75% - 0.4rem);
+    font: 400 0.9375rem / 1.4 "Droid Sans", Helvetica, sans-serif;
+}
+
+.more_topic_article_info{
+    padding-left: 1em;
+}
+
+.more_topic_article_title{
+    font-size: 1.625rem;
+    letter-spacing: -0.035em;
+    margin-bottom: .125em;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.more_topic_content .headline_list{
+    width: calc(31.25% - 0.86rem);
+    margin: 0;
+}
+
+.more_topic_content .headline_list li:first-child .headline_article{
+    padding-top: 0 ;
+}
