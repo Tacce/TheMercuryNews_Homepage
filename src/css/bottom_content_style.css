@@ -1,6 +1,7 @@
 .more_topics{
     width: calc(75% - 0.32rem);
     padding-left: 1%;
+    padding-bottom: 2em;
 }
 
 .section_highlight{
@@ -43,6 +44,107 @@
     padding-top: 0 ;
 }
 
+.event_wrapper{
+    max-width: calc(100% - 300px);
+    float: left;
+    font-family: 'Roboto Condensed', Roboto, Calibri, Candara, Arial, sans-serif;
+    padding-left: 1%;
+    padding-bottom: 1em;
+}
+
+.right_commands {
+    float: right;
+    font-size: .9em;
+}
+
+.event_list_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event_list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.event_list li {
+    display: inline-block;
+    width: 100%;
+    margin-right: 1em;
+}
+
+.event_list li:first-child{
+    margin-left: 1em;
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    max-width: 140px;
+}
+
+.event img{
+    width: 100%;
+    height: auto;
+}
+
+.footer_dates{
+    max-height: 23px;
+    height: 23px;
+    overflow: hidden;
+}
+
+.footer_day{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    line-height: 20px;
+    margin: 0;
+    padding: 6px 0;
+    float: left;
+}
+
+@media(max-width: 1300px){
+    .event_list li:last-child{
+        display: none;
+    }
+}
+
+@media(max-width:1100px){
+    .event_list li:nth-last-child(2){
+        display: none;
+    }
+}
+
+@media(max-width:930px){
+    .event_list li:nth-last-child(3){
+        display: none;
+    }
+}
+
+@media(min-width:600px) and (max-width:750px){
+    .event_list li:nth-last-child(4){
+        display: none;
+    }
+    .right_commands{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .event_wrapper{
+        max-width: calc(100% - 1em);
+    }
+}
+
 @media(max-width: 1040px){
     .more_topics{
         width: calc(60% - 0.5rem);
@@ -55,7 +157,7 @@
         display: block;
     }
     .more_topic_article{
-        width: 100%;
+        width: calc(100% - 1em);
     }
     .more_topic_image{
         width: calc(50% - 0.63rem);
@@ -79,7 +181,7 @@
 
 @media(max-width: 800px) {
     .more_topics{
-        width: 100%;
+        width: calc(100% - 1em);
     }
     .more_topic_image{
         width: 100%;

@@ -2,7 +2,7 @@
     position: static;
     padding: 0;
     text-align: left;
-    width: 100%;
+    width: calc(100% - 1em);
     max-width: 80em;
     margin: 0 auto;
 }

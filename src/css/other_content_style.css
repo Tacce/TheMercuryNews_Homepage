@@ -295,6 +295,7 @@
 
 @media(max-width: 800px){
     .photo_wrapper{
+        /*width: calc(100% - 1em);*/
         width: 100%;
     }
     .media_article_more{
