@@ -136,7 +136,7 @@
 
 .headline{
     width: calc(25% - 0.94rem);
-    padding-left: 1em;
+    padding-left: 1%;
 }
 
 .headline-list-title{

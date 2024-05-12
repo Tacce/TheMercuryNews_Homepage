@@ -46,10 +46,9 @@
 
 .event_wrapper{
     max-width: calc(100% - 300px);
-    float: left;
     font-family: 'Roboto Condensed', Roboto, Calibri, Candara, Arial, sans-serif;
     padding-left: 1%;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
 }
 
 .right_commands {
