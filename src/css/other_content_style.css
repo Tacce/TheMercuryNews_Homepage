@@ -1,5 +1,6 @@
 .recommended{
-    margin-left: 1%;
+    box-sizing: border-box;
+    padding-left: 1%;
     counter-reset: section;
     width: calc(75% - 0.32rem);
     padding-bottom: 1em;
@@ -67,6 +68,7 @@
 }
 
 .topic_wrapper{
+    box-sizing: border-box;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -123,6 +125,7 @@
 }
 
 .photo_wrapper{
+    box-sizing: border-box;
     width: calc(75% - 0.32rem);
     padding-left: 1%;
 }

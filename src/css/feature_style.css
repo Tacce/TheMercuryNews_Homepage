@@ -2,15 +2,17 @@
     position: static;
     padding: 0;
     text-align: left;
-    width: calc(100% - 1em);
+    width: calc(100% - 1%);
     max-width: 80em;
     margin: 0 auto;
+    /*box-sizing: border-box;*/
 }
 
 .feature_wrapper{
+    box-sizing: border-box;
     margin-top: 2em;
     margin-bottom: 2em;
-    margin-left: 1%;
+    padding-left: 1%;
     width: calc(75% - 0.32rem);
     display: flex;
     justify-content: space-between;
@@ -280,6 +282,7 @@
         padding-bottom: .5em;
     }
     .headline{
+        padding-left: 0;
         width: 100%;
     }
 }
