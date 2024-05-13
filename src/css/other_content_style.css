@@ -151,6 +151,7 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
     position: relative;
+    padding-bottom: 1em;
 }
 
 .media_article_title{
@@ -199,7 +200,7 @@
 
 .media_articles li:last-child .media_article_secondary{
     border-bottom: 0;
-    padding-bottom: 20%;
+    padding-bottom: 30%;
 }
 
 .show_more{
@@ -208,7 +209,7 @@
     color: #006394;
     cursor: pointer;
     display: inline-block;
-    padding: 2.5em 0;
+    padding: 0 0 2.5em;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -231,7 +232,7 @@
 .hidden_wrapper{
     display: none;
     position: relative;
-    padding-top: 2em;
+    /*padding-top: 2em;*/
 }
 
 .media_article_more{
@@ -298,7 +299,6 @@
 
 @media(max-width: 800px){
     .photo_wrapper{
-        /*width: calc(100% - 1em);*/
         width: 100%;
     }
     .media_article_more{

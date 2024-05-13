@@ -77,6 +77,12 @@
     text-align: center;
 }
 
+.subscribe_button:hover{
+    background-color: #2781ad;
+    text-decoration: underline;
+}
+
+
 @media(max-width: 1040px){
     .footer_menu_list{
         max-height: 37.5em;;
