@@ -46,6 +46,10 @@ html, body{
     justify-content: center;
 }
 
+#close_nav{
+    display: none;
+}
+
 .sections{
     color:black;
     font: normal 600 0.9375em / 1.0666666667 "Droid Sans", Helvetica, sans-serif;

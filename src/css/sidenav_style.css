@@ -1,0 +1,76 @@
+.sidenav{
+    border-bottom: 1px solid #0a0908;
+    border-top: 1px solid #0a0908;
+    padding: .75rem 0 3rem 0;
+    width: 0;
+    height: calc(100% - 4em);
+    position: fixed;
+    overflow-x: hidden;
+    display: block;
+    top: 4em;
+    background-color: white;
+    transition: 0.3s;
+    z-index: 200;
+}
+
+.sidenav::-webkit-scrollbar{
+    display: none;
+}
+
+.section_wrapper{
+    font: normal 600 0.9375em / 1.0666666667 "Droid Sans", Helvetica, sans-serif;
+    padding-bottom: 2.5em;
+}
+
+.top_sidenav-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top_sidenav-wrapper .weather_wrapper{
+    display: none;
+    padding-left: .5em;
+    padding-bottom: 0;
+}
+
+.subscribe_button_wrapper{
+    padding: 0 2em;
+}
+
+.section_list{
+    list-style: none;
+    padding: 0 1em 3em;
+    margin: 0;
+}
+
+.section_list li {
+    height: 2.3em;
+}
+
+.sidenav_footer{
+    border-top: 1px solid #0a0908;
+}
+
+.sidenav_social_links{
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    padding: 1em 1em 2.5em;
+}
+
+.overlay{
+    height: calc(100% - 4em);
+    top: 4em;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+@media(max-width: 1040px){
+    .top_sidenav-wrapper .weather_wrapper{
+        display: flex;
+    }
+}

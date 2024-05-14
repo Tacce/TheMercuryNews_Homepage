@@ -75,3 +75,25 @@ function toggleVisibility() {
     button.style.display = "none";
     content.style.display = "block";
 }
+
+
+function openNav() {
+    document.querySelector('.sidenav').style.width = "300px";
+    const navbar = document.querySelector('.navbar');
+    navbar.querySelector('.center_top').style.visibility = 'visible';
+    document.getElementById("open_nav").style.display = 'none';
+    document.getElementById("close_nav").style.display = 'flex';
+    document.querySelector('.overlay').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeNav() {
+    document.querySelector('.sidenav').style.width = "0";
+    const navbar = document.querySelector('.navbar');
+    navbar.querySelector('.center_top').style.visibility = 'hidden';
+    document.getElementById("open_nav").style.display = 'flex';
+    document.getElementById("close_nav").style.display = 'none';
+    document.querySelector('.overlay').style.display = 'none';
+    document.body.style.overflow = 'auto';
+
+}

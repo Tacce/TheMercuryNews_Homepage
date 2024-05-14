@@ -212,8 +212,7 @@
     .more_topic_content .headline_list{
         width: 100%;
         border-top: 1px solid #d7d6d2;
-        padding-top: 1em;
         margin-left: 0;
-        padding-bottom: 2em;
+        padding: 1em 0 2em 1em;
     }
 }

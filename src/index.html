@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/other_content_style.css">
     <link rel="stylesheet" href="css/bottom_content_style.css">
     <link rel="stylesheet" href="css/footer_style.css">
+    <link rel="stylesheet" href="css/sidenav_style.css">
 </head>
 
 <body>
@@ -18,10 +19,15 @@
         <div class="primary_wrapper">
             <div class="primary_top">
                 <div class="left_top">
-                    <a href="#" class="toggle_menu">
+                    <a onclick="openNav()" class="toggle_menu" id="open_nav">
                         <img src="https://placehold.co/50/white/black?text=%E2%89%A1">
                         <span class="sections">All Sections</span>
                     </a>
+                    <a onclick="closeNav()" class="toggle_menu" id="close_nav">
+                        <img src="https://placehold.co/50/white/black?text=x">
+                        <span class="sections">All Sections</span>
+                    </a>
+
                 </div>
                 <div class="center_top">
                     <div class="hidden_logo">
@@ -91,6 +97,46 @@
         </div>
     </div>
 </header>
+
+<nav class="sidenav">
+    <div class="top_sidenav-wrapper">
+        <div class="subscribe_button_wrapper"><a href="#" class="subscribe_button">Subscribe Now</a></div>
+        <div class="weather_wrapper">
+            <span class="weather_icon"><img src="https://placehold.co/50/white/black?text=%E2%98%BC"></span>
+            <span class="weather_text">
+                <h3>Tuesday, May 21st 2024</h3>
+                <a href="#">Today's e-Edition</a>
+            </span>
+        </div>
+    </div>
+
+    <div class="section_wrapper">
+        <ul class="section_list">
+            <li><h3>Home Page</h3></li>
+            <li>News</li>
+            <li>Local</li>
+            <li>Obituaries</li>
+            <li>Opinion</li>
+            <li>Sports</li>
+            <li>Things To Do</li>
+            <li>Business</li>
+            <li>Real Estate</li>
+            <li>Marketplace</li>
+            <li>Subscribe</li>
+            <li>Advertise</li>
+            <li>Log in</li>
+        </ul>
+    </div>
+
+    <div class="sidenav_footer">
+        <div class="sidenav_social_links">
+            <p class="prompt">Get Morning Report and other email newsletters</p>
+            <a href="#" class="subscribe_button">Sign up</a>
+        </div>
+    </div>
+</nav>
+
+<div class="overlay" onclick="closeNav()"></div>
 
 <div class="content">
     <div class="feature_wrapper">
