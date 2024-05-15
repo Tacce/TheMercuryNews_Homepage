@@ -9,9 +9,8 @@
 
 .footer_logo{
     display: flex;
-    max-width: 95em;
-    margin: 0 auto 0 auto;
-    padding-left: 2.5%;
+    max-width: 20%;
+    padding-left: 4%;
 }
 
 .footer_menu_list{
@@ -90,6 +89,9 @@
     .footer_menu_wrapper{
         width: 28%;
     }
+    .footer_logo{
+        max-width: 30%;
+    }
 }
 
 @media(max-width: 800px){
@@ -98,6 +100,9 @@
     }
     .footer_menu_wrapper{
         width: 40%;
+    }
+    .footer_logo{
+        max-width: 40%;
     }
 }
 
@@ -118,5 +123,9 @@
     .footer_menu{
         display: none;
     }
-
+    .footer_logo{
+        max-width: 70%;
+        padding: 0;
+        margin: auto;
+    }
 }

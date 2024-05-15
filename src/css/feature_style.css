@@ -162,7 +162,7 @@
     border-bottom: 1px solid #aaa7a4;
 }
 
-.headline_list li:last-child{
+.headline_list li:last-child, .headline_list li:nth-last-child(2){
     border-bottom: 0;
 }
 

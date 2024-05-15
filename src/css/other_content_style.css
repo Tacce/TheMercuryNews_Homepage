@@ -24,7 +24,7 @@
     columns:2
 }
 
-.recommended li a{
+.recommended li {
     counter-increment: section;
     justify-content: flex-start;
     padding-top: 1em;
@@ -39,7 +39,7 @@
     text-decoration: none;
 }
 
-.recommended li a ::before{
+.recommended li ::before{
     font: normal 600 1.3125em / 1 "Droid Sans", Helvetica, sans-serif;
     -webkit-box-align: center;
     align-items: center;
