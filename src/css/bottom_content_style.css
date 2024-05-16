@@ -62,8 +62,16 @@
 }
 
 .right_commands {
+    display: flex;
     float: right;
     font-size: .9em;
+    align-items: center;
+}
+
+.right_commands img{
+    width: 1.5em;
+    height: auto;
+    margin-left: 1em;
 }
 
 .event_list_wrapper{
@@ -143,7 +151,7 @@
     .event_list li:nth-last-child(4){
         display: none;
     }
-    .right_commands{
+    .event_command_text{
         display: none;
     }
 }

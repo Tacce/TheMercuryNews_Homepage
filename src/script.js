@@ -40,21 +40,21 @@ window.addEventListener('resize', function (){
 
 function hide_navbar(navbar){
     navbar.querySelector('.center_top').style.visibility = 'visible';
-    navbar.querySelector('.primary_middle').style.visibility = 'hidden';
+    navbar.querySelector('.primary_middle').style.display = 'none';
     navbar.querySelector('.primary_middle').style.height = '0';
-    navbar.querySelector('.primary_bottom').style.visibility = 'hidden';
+    navbar.querySelector('.primary_bottom').style.display = 'none';
     navbar.querySelector('.primary_bottom').style.height = '0';
-    navbar.querySelector('.trending_bar').style.visibility = 'hidden';
+    navbar.querySelector('.trending_bar').style.display = 'none';
     navbar.querySelector('.trending_bar').style.height = '0';
 }
 
 function show_navbar(navbar){
     navbar.querySelector('.center_top').style.visibility = 'hidden';
-    navbar.querySelector('.primary_middle').style.visibility = 'visible';
+    navbar.querySelector('.primary_middle').style.display = 'flex';
     navbar.querySelector('.primary_middle').style.height = '5em';
-    navbar.querySelector('.primary_bottom').style.visibility = 'visible';
+    navbar.querySelector('.primary_bottom').style.display = 'flex';
     navbar.querySelector('.primary_bottom').style.height = '3em';
-    navbar.querySelector('.trending_bar').style.visibility = 'visible';
+    navbar.querySelector('.trending_bar').style.display = 'flex';
     navbar.querySelector('.trending_bar').style.height = '3em';
 }
 
@@ -90,10 +90,11 @@ function openNav() {
 function closeNav() {
     document.querySelector('.sidenav').style.width = "0";
     const navbar = document.querySelector('.navbar');
-    navbar.querySelector('.center_top').style.visibility = 'hidden';
+    if(outerWidth > smallScreenWidth){
+        navbar.querySelector('.center_top').style.visibility = 'hidden';
+    }
     document.getElementById("open_nav").style.display = 'flex';
     document.getElementById("close_nav").style.display = 'none';
     document.querySelector('.overlay').style.display = 'none';
     document.body.style.overflow = 'auto';
-
 }

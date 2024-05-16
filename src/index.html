@@ -19,15 +19,14 @@
         <div class="primary_wrapper">
             <div class="primary_top">
                 <div class="left_top">
-                    <a onclick="openNav()" class="toggle_menu" id="open_nav">
+                    <button onclick="openNav()" class="toggle_menu" id="open_nav">
                         <img src="https://placehold.co/50/white/black?text=%E2%89%A1">
                         <span class="sections">All Sections</span>
-                    </a>
-                    <a onclick="closeNav()" class="toggle_menu" id="close_nav">
+                    </button>
+                    <button onclick="closeNav()" class="toggle_menu" id="close_nav">
                         <img src="https://placehold.co/50/white/black?text=x">
                         <span class="sections">All Sections</span>
-                    </a>
-
+                    </button>
                 </div>
                 <div class="center_top">
                     <div class="logo_wrapper">
@@ -44,6 +43,7 @@
                                 <a href="#" class="blue_button">Log In</a>
                             </li>
                         </ul>
+                        <img id="user" src=imgs/user_icon.png>
                         <img src="https://placehold.co/40/white/black?text=Q&font=lato">
                     </div>
                 </div>
@@ -629,16 +629,17 @@
                 <ul class="headline_list">
                     <li>
                         <div class="headline_article">
-                            <h3 class="subscriber_only_tag">SUBSCRIBER ONLY</h3>
+
                             <h3 class="headline_article_title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim.
                             </h3>
                         </div>
                     </li>
                     <li>
                         <div class="headline_article">
+                            <h3 class="subscriber_only_tag">SUBSCRIBER ONLY</h3>
                             <h3 class="headline_article_title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </h3>
                         </div>
                     </li>
@@ -670,23 +671,23 @@
                 <ul class="headline_list">
                     <li>
                         <div class="headline_article">
+                            <h3 class="headline_article_title">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim.
+                            </h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="headline_article">
+                            <h3 class="headline_article_title">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim.
+                            </h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="headline_article">
                             <h3 class="subscriber_only_tag">SUBSCRIBER ONLY</h3>
                             <h3 class="headline_article_title">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="headline_article">
-                            <h3 class="headline_article_title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim.
-                            </h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="headline_article">
-                            <h3 class="headline_article_title">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non enim.
                             </h3>
                         </div>
                     </li>
@@ -769,7 +770,12 @@
 
     <div class="event_wrapper">
         <h3 class="headline">Upcoming Events</h3>
-        <span class="right_commands">See All Events --- Add your event</span>
+        <span class="right_commands">
+            <img src="imgs/calendar.png">
+            <div class="event_command_text">See All Events</div>
+            <img src="imgs/plus.png">
+            <div class="event_command_text">Add your event</div>
+        </span>
         <div class = "event_list_wrapper">
             <img src="https://placehold.co/10x100/white/black?text=<">
             <ul class="event_list">

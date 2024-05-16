@@ -37,6 +37,13 @@ html, body{
     width: 33%;
 }
 
+.left_top button{
+    background-color: transparent;
+    border: none;
+    font: normal 600 1em / 1.0666666667 "Droid Sans", Helvetica, sans-serif;
+    cursor: pointer;
+}
+
 .toggle_menu{
     float: left;
     display: flex;
@@ -76,6 +83,12 @@ html, body{
     list-style: none;
     display: flex;
     padding: 0;
+}
+
+#user{
+    display: none;
+    height: auto;
+    width: 1.5em;
 }
 
 .login_sub_buttons li:not(:first-child){
@@ -286,6 +299,9 @@ html, body{
     }
     .login_sub_buttons{
         display: none;
+    }
+    #user{
+        display: flex;
     }
     .sections{
         display: none;
