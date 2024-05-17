@@ -1,6 +1,4 @@
 .recommended{
-    box-sizing: border-box;
-    padding-left: 1%;
     counter-reset: section;
     width: calc(75% - 0.32rem);
     padding-bottom: 1em;
@@ -29,7 +27,6 @@
     justify-content: flex-start;
     padding-top: 1em;
     display: inline-flex;
-    -webkit-box-align: center;
     align-items: center;
     max-width: 100%;
     width: 100%;
@@ -41,17 +38,14 @@
 
 .recommended li ::before{
     font: normal 600 1.3125em / 1 "Droid Sans", Helvetica, sans-serif;
-    -webkit-box-align: center;
     align-items: center;
     background-color: #006394;
     border-radius: 50%;
     color: #fff;
     content: counter(section);
     display: flex;
-    -webkit-box-flex: 0;
     flex: 0 0 2rem;
     height: 2rem;
-    -webkit-box-pack: center;
     justify-content: center;
     line-height: 2rem;
     margin-right: .625rem;
@@ -61,20 +55,17 @@
 
 .recommended_article{
     display: flex;
-    -webkit-box-pack: start;
     justify-content: center;
     padding-bottom: .3125em;
     font: normal 600 1.0625em / 1.0588235294 "Droid Serif", Helvetica, sans-serif;
 }
 
 .topic_wrapper{
-    box-sizing: border-box;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
     flex-wrap: wrap;
     width: calc(75% - 0.32rem);
-    padding-left: 1%;
 }
 
 .topic_column{
@@ -93,15 +84,11 @@
 
 .topic_content{
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
 }
 
 .topic_article{
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
     margin-bottom: 1em;
     justify-content: space-between;
@@ -125,9 +112,7 @@
 }
 
 .photo_wrapper{
-    box-sizing: border-box;
     width: calc(75% - 0.32rem);
-    padding-left: 1%;
 }
 
 .visibile_wrapper{
@@ -144,11 +129,8 @@
     width: calc(62.5% - 0.47rem);
     float: left;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
     font-size: 1rem;
-    -webkit-box-pack: justify;
     justify-content: space-between;
     position: relative;
     padding-bottom: 1em;
@@ -165,7 +147,6 @@
     width: calc(37.5% - 0.28rem);
     display: flex;
     font-size: 1rem;
-    -webkit-box-pack: justify;
     /*justify-content: space-between;*/
     position: relative;
     margin-bottom: 1em;
@@ -220,15 +201,12 @@
 .hidden_wrapper{
     display: none;
     position: relative;
-    /*padding-top: 2em;*/
 }
 
 .media_article_more{
     width: calc(25% - 15px);
     margin-bottom: 2em;
     margin-right: 0.9em;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
     float: left;
 }
